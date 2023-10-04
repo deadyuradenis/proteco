@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>index</title>
+		<meta name="theme-color" content="#fff">
+		<link rel="icon" type="image/x-icon" href="img/svg/favicon.svg">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+
+	</head>
+	<body class="body">
+		<!-- header -->
+		@@include("../blocks/modules/header-personal/header-personal.html")
+		<!-- header  ends -->
+
+		<main class="main">
+			<div class="content">
+				<section class="section section--personal">
+					<div class="container">
+						<div class="section__inner">
+							<div class="alert-block">
+								<img src="img/alert-circle.svg" alt="" class="alert-block__img">
+								<div class="alert-block__content">
+									<div class="h5 mb-2">
+										Внимание!
+									</div>
+									<div class="text-md text-lh">
+										Для участия в акциях и регитсрации промокодов заполните профиль
+									</div>
+								</div>
+							</div>
+							<div class="section__title">
+								Промокоды и акции
+							</div>
+							<div class="promo-block jsForm">
+								<form action="#">
+									<div class="row promo-block__row">
+										<div class="col-12 col-md-6 promo-block__col">
+											<div class="promo-block__item">
+												<div class="promo-block__item-header">
+													<div class="h5">
+														Зарегистрируйте промокод
+													</div>
+												</div>
+												<div class="promo-block__item-body">
+													<div class="promo-block__field">
+														<div class="input input--l">
+															<input type="text" class="input__field jsInput" name="promocode">	
+															<span class="input__label">
+																Промокод
+															</span>
+														</div>
+													</div>
+													<button type="submit" class="button button--l jsFormSubmitButton promo-block__button">
+														<span class="button__text">
+															Зарегистрировать
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 promo-block__col">
+											<div class="promo-block__item">
+												<div class="promo-block__item-header">
+													<div class="h5">
+														Набрано баллов
+													</div>
+
+													<div class="tooltip promo-block__tooltip jsTooltip">
+														<div class="tooltip__trigger">
+															<svg class="icon ">
+																<use xlink:href="img/sprites/sprite.svg#alert-usage">
+															   </use>
+															</svg>
+														</div>
+														<div class="tooltip__content">
+															<div class="text-sm">
+																Списки на отправку призов формируются в начале месяца, следующего за отчётным. Затем призы распределяются по складам, дистрибьюторам, а от них по победителям.
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="promo-block__item-body">
+													<div class="promo-block__field">
+														<div class="promo-block__points">
+															<div class="promo-block__points-title">
+																2 422
+															</div>
+															<span>
+																Доступно 5 призов
+															</span>
+														</div>
+													</div>
+													<a href="#" class="button button--l jsFormSubmitButton promo-block__button" data-bs-toggle="modal" data-bs-target="#modal-personal-alert">
+														<span class="button__text">
+															Перевести в призы 
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div class="tabs jsTabs">
+								<div class="tabs__nav">
+									<div class="tabs__link jsTabsTrigger is-active">
+										<div class="text-18 text-lh text-medium">
+											Акции
+										</div>
+									</div>
+									<div class="tabs__link jsTabsTrigger">
+										<div class="text-18 text-lh text-medium">
+											Мои призы
+										</div>
+									</div>
+								</div>
+								<div class="tabs__content">
+									<div class="tabs__item jsTabsItem is-active">
+										<div class="shares-list">
+											<div class="shares-list__item jsAccordion">
+												<div class="shares-list__header">
+													<div class="h5 shares-list__title">
+														<span>
+															Акция 1
+														</span>
+													</div>
+													<div class="shares-list__accordion-trigger jsAccordionTrigger">
+														<span class="show">
+															Показать
+														</span>
+														<span class="hide">
+															Скрыть
+														</span>
+														<svg class="icon">
+															<use xlink:href="img/sprites/sprite.svg#arrow-down-usage">
+														   </use>
+														</svg>
+													</div>
+												</div>
+												<div class="shares-list__body jsAccordionBody">
+													<div class="shares-list__row shares-list__row--title d-none d-md-flex">
+														<div class="shares-list__col">
+															<div class="shares-list__text">
+																Создано
+															</div>
+														</div>
+														<div class="shares-list__col">
+															<div class="shares-list__text">
+																Промокод
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text">
+																Ответ системы
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="shares-list__item jsAccordion">
+												<div class="shares-list__header">
+													<div class="h5 shares-list__title">
+														<span>
+															Акция 1
+														</span>
+														<div class="shares-list__title-status">
+															Завершена
+														</div>
+													</div>
+													<div class="shares-list__accordion-trigger jsAccordionTrigger">
+														<span class="show">
+															Показать
+														</span>
+														<span class="hide">
+															Скрыть
+														</span>
+														<svg class="icon">
+															<use xlink:href="img/sprites/sprite.svg#arrow-down-usage">
+														   </use>
+														</svg>
+													</div>
+												</div>
+												<div class="shares-list__body jsAccordionBody">
+													<div class="shares-list__row shares-list__row--title d-none d-md-flex">
+														<div class="shares-list__col">
+															<div class="shares-list__text">
+																Создано
+															</div>
+														</div>
+														<div class="shares-list__col">
+															<div class="shares-list__text">
+																Промокод
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text">
+																Ответ системы
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="shares-list__item jsAccordion">
+												<div class="shares-list__header">
+													<div class="h5 shares-list__title">
+														<span>
+															Акция 1
+														</span>
+														<div class="shares-list__title-status">
+															Завершена
+														</div>
+													</div>
+													<div class="shares-list__accordion-trigger jsAccordionTrigger">
+														<span class="show">
+															Показать
+														</span>
+														<span class="hide">
+															Скрыть
+														</span>
+														<svg class="icon">
+															<use xlink:href="img/sprites/sprite.svg#arrow-down-usage">
+														   </use>
+														</svg>
+													</div>
+												</div>
+												<div class="shares-list__body jsAccordionBody">
+													<div class="shares-list__row shares-list__row--title d-none d-md-flex">
+														<div class="shares-list__col">
+															<div class="shares-list__text">
+																Создано
+															</div>
+														</div>
+														<div class="shares-list__col">
+															<div class="shares-list__text">
+																Промокод
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text">
+																Ответ системы
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--check">
+																Проверка
+															</div>
+														</div>
+													</div>
+													<div class="shares-list__row">
+														<div class="shares-list__col shares-list__col--1">
+															<div class="shares-list__text">
+																18.09.2021
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--2">
+															<div class="shares-list__text">
+																123456789012345
+															</div>
+														</div>
+														<div class="shares-list__col shares-list__col--3">
+															<div class="shares-list__text text-medium shares-list__text--accepted">
+																Принят
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item jsTabsItem">
+										<div class="prizes-list">
+											<div class="prizes-list__row prizes-list__row--description">
+												<div class="text-md prizes-list__text">
+													Списки на отправку призов формируются в начале месяца, следующего за отчётным. Затем призы распределяются по складам, дистрибьюторам, а от них по победителям.
+												</div>
+											</div>
+											<div class="prizes-list__row prizes-list__row--title d-none d-lg-flex">
+												<div class="prizes-list__col prizes-list__col--1">
+													<div class="prizes-list__text">
+														Дата
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--3">
+													<div class="prizes-list__text">
+														Приз
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--4">
+													<div class="prizes-list__text">
+														Статус
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--5"></div>
+											</div>
+
+											<div class="prizes-list__row jsAccordion">
+												<div class="prizes-list__col prizes-list__col--1">
+													<div class="prizes-list__text">
+														18.09.2021
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--2 d-block d-lg-none">
+													<div class="prizes-list__text text-semibold">
+														8 призов
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--3 jsAccordionBody">
+													<div class="prizes-list__text">
+														Эстелайт Астериа шприц A1B/A2B/A3,5B/BL/NE/OcE/WE 4,0 г, белый
+													</div>
+													<div class="prizes-list__text">
+														Эстелайт Сигма Квик шприц A2/A3/BW/CE/OA1/OA2/OA3/OPA2 3,8 г, зеленый
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА БЛОКЕР шприц 4,0 г/унидозы, черный
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА шприц 4,0 г/унидозы, серый
+													</div>
+													<div class="prizes-list__text">
+														Юниверсал Флоу ВЫСОК. A2 3 г, Юниверсал Флоу сверхНИЗК. A2 3 г,, синий
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА БЛОКЕР шприц 4,0 г/унидозы, белый
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА шприц 4,0 г/унидозы, красный
+													</div>
+													<div class="prizes-list__text">
+														Юниверсал Флоу ВЫСОК. A2 3 г, Юниверсал Флоу сверхНИЗК. A2 3 г,, желтый
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--4">
+													<div class="prizes-list__text text-medium prizes-list__text--accepted">
+														Принят
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--5">
+													<div class="prizes-list__accordion-trigger jsAccordionTrigger">
+														<span class="show">
+															Показать
+														</span>
+														<span class="hide">
+															Скрыть
+														</span>
+														<svg class="icon">
+															<use xlink:href="img/sprites/sprite.svg#arrow-down-usage">
+														   </use>
+														</svg>
+													</div>
+													<a href="#" class="button button--m prizes-list__button" data-bs-toggle="modal" data-bs-target="#modal-qr-code">
+														<span class="button__text">
+															Получить приз
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="prizes-list__row jsAccordion">
+												<div class="prizes-list__col prizes-list__col--1">
+													<div class="prizes-list__text">
+														18.09.2021
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--2 d-block d-lg-none">
+													<div class="prizes-list__text text-semibold">
+														8 призов
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--3 jsAccordionBody">
+													<div class="prizes-list__text">
+														Эстелайт Астериа шприц A1B/A2B/A3,5B/BL/NE/OcE/WE 4,0 г, белый
+													</div>
+													<div class="prizes-list__text">
+														Эстелайт Сигма Квик шприц A2/A3/BW/CE/OA1/OA2/OA3/OPA2 3,8 г, зеленый
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА БЛОКЕР шприц 4,0 г/унидозы, черный
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА шприц 4,0 г/унидозы, серый
+													</div>
+													<div class="prizes-list__text">
+														Юниверсал Флоу ВЫСОК. A2 3 г, Юниверсал Флоу сверхНИЗК. A2 3 г,, синий
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА БЛОКЕР шприц 4,0 г/унидозы, белый
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА шприц 4,0 г/унидозы, красный
+													</div>
+													<div class="prizes-list__text">
+														Юниверсал Флоу ВЫСОК. A2 3 г, Юниверсал Флоу сверхНИЗК. A2 3 г,, желтый
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--4">
+													<div class="prizes-list__text text-medium prizes-list__text--accepted">
+														Принят
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--5">
+													<div class="prizes-list__accordion-trigger jsAccordionTrigger">
+														<span class="show">
+															Показать
+														</span>
+														<span class="hide">
+															Скрыть
+														</span>
+														<svg class="icon">
+															<use xlink:href="img/sprites/sprite.svg#arrow-down-usage">
+														   </use>
+														</svg>
+													</div>
+													<a href="#" class="button button--m prizes-list__button" data-bs-toggle="modal" data-bs-target="#modal-qr-code">
+														<span class="button__text">
+															Получить приз
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="prizes-list__row jsAccordion">
+												<div class="prizes-list__col prizes-list__col--1">
+													<div class="prizes-list__text">
+														18.09.2021
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--2 d-block d-lg-none">
+													<div class="prizes-list__text text-semibold">
+														8 призов
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--3 jsAccordionBody">
+													<div class="prizes-list__text">
+														Эстелайт Астериа шприц A1B/A2B/A3,5B/BL/NE/OcE/WE 4,0 г, белый
+													</div>
+													<div class="prizes-list__text">
+														Эстелайт Сигма Квик шприц A2/A3/BW/CE/OA1/OA2/OA3/OPA2 3,8 г, зеленый
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА БЛОКЕР шприц 4,0 г/унидозы, черный
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА шприц 4,0 г/унидозы, серый
+													</div>
+													<div class="prizes-list__text">
+														Юниверсал Флоу ВЫСОК. A2 3 г, Юниверсал Флоу сверхНИЗК. A2 3 г,, синий
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА БЛОКЕР шприц 4,0 г/унидозы, белый
+													</div>
+													<div class="prizes-list__text">
+														ОМНИХРОМА шприц 4,0 г/унидозы, красный
+													</div>
+													<div class="prizes-list__text">
+														Юниверсал Флоу ВЫСОК. A2 3 г, Юниверсал Флоу сверхНИЗК. A2 3 г,, желтый
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--4">
+													<div class="prizes-list__text text-medium prizes-list__text--issued">
+														Выдан
+													</div>
+												</div>
+												<div class="prizes-list__col prizes-list__col--5">
+													<div class="prizes-list__accordion-trigger jsAccordionTrigger">
+														<span class="show">
+															Показать
+														</span>
+														<span class="hide">
+															Скрыть
+														</span>
+														<svg class="icon">
+															<use xlink:href="img/sprites/sprite.svg#arrow-down-usage">
+														   </use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		
+		<!-- modal -->
+		@@include("../blocks/modules/modal/modal.html")
+		<!-- modal  ends -->
+
+
+		<script src="js/main.js"></script>
+		<script src="js/vendor.js"></script>
+	</body>
+</html>

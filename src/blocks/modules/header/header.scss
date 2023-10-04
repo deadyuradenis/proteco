@@ -1,0 +1,41 @@
+.header {
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-right: inherit;
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media only screen and (max-width: $bp-md){
+            justify-content: center;
+        }
+    }
+
+    &__logo {
+        height: 44px;
+        display: flex;
+        object-fit: contain;
+
+
+        @media only screen and (max-width: $bp-sm){
+            max-width: 100%;
+        }
+    }
+    
+    &__actions{
+        display: flex;
+
+        @media only screen and (max-width: $bp-sm){
+            display: none;
+        }
+    }
+
+    &__button {
+        margin-left: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.alert-block {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: rgba(242, 153, 74, 0.05);
+    border: 1px solid #F58020;
+    margin-bottom: 32px;
+
+    &__img {
+        width: 20px;
+        height: 20px;
+        margin-right: 14px;
+    }
+}

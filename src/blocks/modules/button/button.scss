@@ -1,0 +1,214 @@
+.button {
+	cursor: pointer;
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 64px;
+	text-decoration: none;
+	font-family: 'Raleway';
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 32px;
+	color: #fff;
+	fill: #fff;
+	border: 2px solid $blue;
+	background-color: $blue;
+	padding: 0 18px;
+	box-shadow: 0px 10px 25px rgba(28, 64, 106, 0.1);
+	border-radius: 2px;
+	transition: background-color 0.25s ease, color 0.25s ease 0.15s, fill 0.25s ease 0.15s, border-color 0.25s ease, transform 0.35s ease;
+
+	&__text {
+		color: inherit;
+		margin: 0 12px;
+
+		@media only screen and (max-width: $bp-sm){
+			margin: 0 8px;
+		}
+	}
+
+	&:hover {
+		background-color: $blue-hover;
+		border-color: $blue-hover;
+	}
+
+	&:active{
+		background-color: $blue-active;
+		border-color: $blue-active;
+	}
+
+	
+	&__icon{
+		width: 24px;
+		height: 24px;
+	}
+	
+	&__text + &__icon{
+		margin-left: 8px;
+	}
+
+	&__icon + &__text{
+		margin-left: 20px;
+	}
+
+	&--l{
+		padding: 0 14px;
+		height: 56px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&--l &__text{
+		margin: 0 8px;
+	}
+
+	&--l &__icon{
+		width: 24px;
+		height: 24px;
+	}
+	
+	&--l &__text &__icon{
+		margin-left: 8px;
+	}
+
+	&--l &__icon + &__text{
+		margin-left: 16px;
+	}
+
+	&--m{
+		padding: 0 10px;
+		height: 48px;
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+
+	&--m &__icon{
+		width: 24px;
+		height: 24px;
+	}
+	
+	&--m &__text &__icon{
+		margin-left: 0;
+	}
+
+	&--m &__icon + &__text{
+		margin-left: 12px;
+	}
+
+	&--s{
+		padding: 0 10px;
+		height: 32px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	&--s &__text{
+		margin: 0 4px;
+	}
+
+	&--s &__icon{
+		width: 16px;
+		height: 16px;
+	}
+	
+	&--s &__text &__icon{
+		margin-left: 4px;
+	}
+
+	&--s &__icon + &__text{
+		margin-left: 8px;
+	}
+
+
+
+	&--icon{
+		padding: 0;
+		width: 56px;
+		height: 56px;
+	}
+
+	&--icon#{&}--m{
+		height: 48px;
+		width: 48px;
+	}
+
+	&--icon#{&}--s{
+		height: 32px;
+		width: 32px;
+	}
+
+	&--transparent{
+		background-color: transparent;
+		fill: $blue;
+		border-color: transparent;
+		box-shadow: none;
+
+		&:hover{
+			fill: #fff;
+		}
+	}
+
+	&--contour{
+		background-color: transparent;
+		color: $blue;
+		fill: $blue;
+		border-color: $blue;
+		box-shadow: none;
+
+		&:hover{
+			background-color: $blue-hover;
+			color: #fff;
+			fill: #fff;
+		}
+
+		&:active{
+			background-color: $blue-active;
+			border-color: $blue-active;
+		}
+	}
+
+	&--inverted{
+		background-color: transparent;
+		border-color:#fff;
+		color: #fff;
+		fill: #fff;
+
+		&:hover{
+			background-color: #fff;
+			border-color: #fff;
+			color: $text;
+			fill: $text;
+		}
+	}
+
+	&--red{
+		background-color: rgb(235, 87, 87);
+		border-color: rgb(235, 87, 87);
+
+		&:hover{
+			background-color: rgb(253, 46, 46);
+			border-color: rgb(253, 46, 46);
+		}
+
+		&:active{
+			background-color:rgb(223, 29, 29);
+			border-color: rgb(223, 29, 29);
+		}
+	}
+
+	&--disabled, &[disabled]{
+		background-color: #F2F2F2;
+		border-color: #F2F2F2;
+		color: #BDBDBD;
+		fill: #BDBDBD;
+		pointer-events: none;
+	}
+}
+
+.ui{
+	.row{
+		justify-content: space-between;
+	}
+}

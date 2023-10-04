@@ -1,0 +1,45 @@
+.tabs {
+    &__nav {
+        display: flex;
+    }
+
+    &__link {
+        cursor: pointer;
+        padding: 12px 0 16px;
+        color: #4F4F4F;
+        border-bottom: 5px solid transparent;
+        will-change: transform;
+        transition: color 0.35s ease, border-color 0.35s ease;
+        margin-right: 32px;
+        
+        @media only screen and (max-width: $bp-sm){
+            border-bottom-width: 4px;
+        }
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+        
+        &:hover{
+            color: $blue;
+        }
+
+        &.is-active{
+            color: $text;
+            border-bottom-color: $blue;
+        }
+    }
+    
+    &__content{
+        margin-top: 24px;
+    }
+
+    &__item {
+        display: none;
+
+        &.is-active{
+            display: block;
+            animation: tabs-hover 0.75s ease;
+        }
+    }
+}

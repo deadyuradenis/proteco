@@ -1,0 +1,219 @@
+.shares-list {
+
+    &__item {
+        margin-bottom: 8px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__header {
+        padding: 16px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+
+        @media only screen and (max-width: $bp-md){
+            padding: 16px 16px 16px 24px;
+        }   
+        
+        @media only screen and (max-width: $bp-sm){
+            
+        }
+    }
+
+    &__title {
+        display: flex;
+
+        span{
+            margin-right: 16px;
+        }
+        @media only screen and (max-width: $bp-sm){
+            flex-direction: column;
+        }
+    }
+
+    &__title-status {
+        color: $gray-dark;
+        font-weight: 400;
+
+        @media only screen and (max-width: $bp-sm){
+            font-size: 14px;    
+        }
+    }
+
+    &__item.is-open &__accordion-trigger{
+        
+        .show{
+            display: none;
+        }
+
+        .hide{
+            display: flex;
+        }
+
+        .icon{
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__accordion-trigger {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 500;
+        color: $dark;
+        fill: $blue;
+        display: flex;
+        align-items: center;
+        transition: color 0.25s ease;
+
+        &:hover{
+            color: $blue;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            width: 32px;
+            height: 32px;
+            justify-content: center;
+            fill: #fff;
+            background-color: $blue;
+            border-radius: 2px;
+
+            span{
+                display: none !important;
+            }
+        }   
+
+        .icon{
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+            transition: transform 0.35s ease;
+
+            @media only screen and (max-width: $bp-md){
+                margin-left: 0;
+                width: 16px;
+                height: 16px;
+            }   
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .show{
+            display: flex;
+        }
+
+    }
+
+    &__body {
+        background-color: #fff;
+        padding: 32px;
+        margin-top: 2px;
+
+        @media only screen and (max-width: $bp-md){
+            padding: 16px;
+        }   
+        
+        @media only screen and (max-width: $bp-sm){
+            
+        }
+    }
+
+    &__row {
+        display: flex;
+        padding: 14px 16px;
+        color: $text;
+
+        @media only screen and (max-width: $bp-md){
+            flex-wrap: wrap;
+        }   
+        
+        @media only screen and (max-width: $bp-sm){
+            
+        }
+
+        &:nth-of-type(even){
+            background-color: $gray-light;
+        }
+        
+        &--title {
+            color: $gray-dark;
+            padding:0 16px 16px;
+            
+        }
+    
+    }
+
+    &__col {
+        margin-right: 24px;
+        width: 33.33%;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            width: 50%;
+            margin-right: 0;
+        }
+
+        &--1{
+            @media only screen and (max-width: $bp-md){
+                color: $gray;
+            }   
+
+            @media only screen and (max-width: $bp-sm){
+                
+            }
+        }
+
+        &--2 {
+
+            @media only screen and (max-width: $bp-md){
+                width: 100%;
+                order: 1;
+                margin-top: 8px;
+                font-weight: 500;
+            }   
+            
+            @media only screen and (max-width: $bp-sm){
+                
+            }
+        }
+        
+        &--3{
+            @media only screen and (max-width: $bp-md){
+               text-align: right;
+            }   
+
+            @media only screen and (max-width: $bp-sm){
+                
+            }
+        }
+    }
+
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 24px;
+        
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        &--accepted {
+            color: #27AE60;
+        }
+        
+        &--check {
+            color: #F57C1F;;
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+.link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    fill: $blue;
+    color: $blue;
+    transition: fill 0.25s ease, color 0.25s ease;
+
+    .icon{
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+    }
+		
+    &:hover{
+        fill: $blue-hover;
+        color: $blue-hover;
+    }
+
+    &--dark{
+        color: $dark;
+
+        &:hover{
+            fill: $blue-hover;
+            color: $blue-hover;
+        }
+    }
+}

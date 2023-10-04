@@ -1,0 +1,111 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	// overflow: hidden;
+}
+
+.content {
+	
+}
+
+.body{
+	&._lock{
+		overflow: hidden;
+	}
+}
+
+.section {
+	padding: 128px 0;
+
+	@media only screen and (max-width: $bp-md){
+		padding: 96px 0;
+	}
+
+	&:first-of-type{
+		padding-top: 88px;
+	}
+	
+	&--personal{
+		padding: 64px 0 132px !important;
+
+		@media only screen and (max-width: $bp-md){
+			padding-top: 48px !important;
+		}   
+	}
+
+	&__title{
+		font-weight: 600;
+		font-family: 'Montserrat';
+		line-height: 130%;
+		font-size: 33px;
+		color: $dark;
+		margin-bottom: 32px;
+
+		&--lg{
+			font-size: 28px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&--gradient{
+		background: linear-gradient(90deg, #003D68 0%, #005A6E 100%);
+		overflow: hidden;
+	}
+
+	&--gradient &__bg-image{
+		width: 100%;
+		min-height: 1080px;
+		object-fit: contain;
+	}
+}
+
+
+.map-navigation {
+
+	&__header {
+		padding: 24px 48px;
+		background-color: rgb(29, 29, 29);
+
+		@media only screen and (max-width: $bp-md){
+			padding: 24px 32px;
+		}   
+		
+	}
+
+	&__title {
+		color: #fff;
+	}
+
+	&__item {
+		a{
+			font-size: 18px;
+			line-height: 24px;
+			color: $dark;
+			text-decoration: none;
+			font-weight: 500;
+			display: block;
+			padding: 8px 48px;
+			transition: color 0.25s ease, padding 0.35s ease;
+
+			@media only screen and (max-width: $bp-md){
+				padding: 8px 32px;
+				font-size: 16px;
+				line-height: 21px;
+			}   
+			
+			&:hover{
+				color: $blue;
+				padding-left: 62px;
+
+				@media only screen and (max-width: $bp-md){
+					padding-left: 48px;
+				}   
+			}
+		}
+
+		&:nth-child(even) a{
+			background-color: rgba(229, 229, 229, 0.3);
+		}
+	}
+}

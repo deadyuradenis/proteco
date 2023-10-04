@@ -1,0 +1,4634 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>index</title>
+		<meta name="theme-color" content="#fff">
+		<link rel="icon" type="image/x-icon" href="img/svg/favicon.svg">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+
+	</head>
+	<body class="body">
+
+		<main class="main">
+			<div class="content">
+				<section class="marking jsTabs">
+					<div class="sidebar marking__sidebar">
+						<div class="sidebar__inner">
+							<a href="personal-account.html" class="sidebar__user">
+								<img src="img/user/photo.jpg" alt="" class="sidebar__user-photo">
+								<div class="text-md text-lh sidebar__user-name">
+									Константин
+								</div>
+							</a>
+							<div class="sidebar__main">
+								<div class="sidebar__menu">
+									<div class="sidebar__menu-group">
+										<div class="text-sm text-lh sidebar__menu-title">
+											ОСНОВНЫЕ
+										</div>
+										<a href="#" class="sidebar__menu-item is-active jsTabsTrigger">
+											<div class="text-md">
+												Маркировка
+											</div>
+										</a>
+										<a href="#" class="sidebar__menu-item jsTabsTrigger">
+											<div class="text-md">
+												Отгрузка
+											</div>
+										</a>
+									</div>
+									<div class="sidebar__menu-group">
+										<div class="text-sm text-lh sidebar__menu-title">
+											ДОПОЛНИТЕЛЬНО
+										</div>
+										<a href="#" class="sidebar__menu-item jsTabsTrigger">
+											<div class="text-md">
+												Контрагенты
+											</div>
+										</a>
+										<a href="#" class="sidebar__menu-item jsTabsTrigger">
+											<div class="text-md">
+												Продукция
+											</div>
+										</a>
+										<a href="#" class="sidebar__menu-item jsTabsTrigger">
+											<div class="text-md">
+												Возврат
+											</div>
+										</a>
+										<a href="#" class="sidebar__menu-item jsTabsTrigger">
+											<div class="text-md">
+												Статистика
+											</div>
+										</a>
+										<a href="#" class="sidebar__menu-item jsTabsTrigger">
+											<div class="text-md">
+												Помощь
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="sidebar__menu-search jsForm">
+									<form action="#">
+										<div class="text-sm text-lh sidebar__menu-title">
+											ПОИСК ПО ПРОМОКОДУ
+										</div>
+										<div class="input input--m input--search sidebar__input-search">
+											<input type="text" class="input__field" placeholder="Промокод" name="search">
+											<button class="input__button">
+												<svg class="icon">
+													<use xlink:href="img/sprites/sprite.svg#search-usage"></use>
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="marking__main">
+						
+						<div class="marking__item is-active jsTabsItem">
+							<div class="marking__header">
+								<div class="marking__header-title">
+									Маркировка продукции
+								</div>
+								<div class="marking__header-action">
+									<a href="#" class="button button--m marking__header-action" data-bs-toggle="modal" data-bs-target="#modal-marking-marking">
+										<svg class="icon button__icon">
+											<use xlink:href="img/sprites/sprite.svg#frame-usage">
+										   </use>
+										</svg>
+										<span class="button__text">
+											Маркировать
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="marking__body">
+								<div class="marking-row marking__row marking__row--title">
+									<div class="marking-row__col marking-row__col--xs">
+										<div class="text-16 marking-row__text">
+											#
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Продукт
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Группа
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Кол-во
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Дата
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--action">
+										<div class="select select--simple marking__select">
+											<select class="select__item jsSelect" name="sort" >
+												<option></option>
+												<option value="Номер">Номер</option>
+												<option value="Продукт">Продукт</option>
+												<option value="Группа">Группа</option>
+												<option value="Кол-во">Кол-во</option>
+												<option value="Дата">Дата</option>
+											</select>
+											<div class="select__label">
+												Сортировка
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="marking__body-content">
+									<div class="marking__list">
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													1
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													3658
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													14.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													2
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													2733
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													23.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													3
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													687
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													4
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													6380
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.11.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													3658
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													14.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													6
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													2733
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													23.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													7
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													687
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													8
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													6380
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.11.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													9
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													4631
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													11.11.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													10
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													2733
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													23.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													11
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													2733
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													23.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-marking-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													12
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токояма Астериа
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													2733
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													23.10.22
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="marking__footer">
+								<div class="pagination pagination--md marking__pagination">
+									<div class="pagination__view">
+										<div class="text-16 text-lh pagination__view-label">
+											Показать
+										</div>
+										<div class="pagination__view-list">
+											<a href="#" class="link pagination__view-link is-active">
+												20
+											</a>
+											<a href="#" class="link pagination__view-link">
+												50
+											</a>
+											<a href="#" class="link pagination__view-link">
+												100
+											</a>
+											<a href="#" class="link pagination__view-link">
+												200
+											</a>
+										</div>
+									</div>
+									<div class="pagination__main">
+										<div class="pagination__field">
+											<div class="pagination__label">
+												Страница
+											</div>
+											<input type="text" class="pagination__input" value="1" name="page">
+											<div class="pagination__label">
+												из <span>55</span>
+											</div>
+										</div>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-left-usage"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-right-usage"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="marking__item jsTabsItem">
+							<div class="marking__header">
+								<div class="marking__header-title">
+									Отгрузка продукции
+								</div>
+								<div class="marking__header-action">
+									<a href="#" class="button button--m marking__header-action" data-bs-toggle="modal" data-bs-target="#modal-shipment-add">
+										<svg class="icon button__icon">
+											<use xlink:href="img/sprites/sprite.svg#add-usage">
+										   </use>
+										</svg>
+										<span class="button__text">
+											Создать отгрузку
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="marking__body">
+								<div class="marking-row marking__row marking-row marking__row--title">
+									<div class="marking-row__col marking-row__col--xs">
+										<div class="text-16 marking-row__text">
+											#
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Дилер
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Кол-во
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Дата отгрузки
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Номер накладной
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--action">
+										<div class="select select--simple marking__select">
+											<select class="select__item jsSelect" name="sort" >
+												<option></option>
+												<option value="Номер">Номер</option>
+												<option value="Продукт">Продукт</option>
+												<option value="Группа">Группа</option>
+												<option value="Кол-во">Кол-во</option>
+												<option value="Дата">Дата</option>
+											</select>
+											<div class="select__label">
+												Сортировка
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="marking__body-content">
+									<div class="marking__list">
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													1
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													2
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													3
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													4
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													6
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													7
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													8
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													9
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													10
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													11
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													12
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													13
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													14
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													15
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													16
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													17
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													18
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													19
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-shipment-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													20
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													65900
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													12.08.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="marking__footer">
+								<div class="pagination pagination--md marking__pagination">
+									<div class="pagination__view">
+										<div class="text-16 text-lh pagination__view-label">
+											Показать
+										</div>
+										<div class="pagination__view-list">
+											<a href="#" class="link pagination__view-link is-active">
+												20
+											</a>
+											<a href="#" class="link pagination__view-link">
+												50
+											</a>
+											<a href="#" class="link pagination__view-link">
+												100
+											</a>
+											<a href="#" class="link pagination__view-link">
+												200
+											</a>
+										</div>
+									</div>
+									<div class="pagination__main">
+										<div class="pagination__field">
+											<div class="pagination__label">
+												Страница
+											</div>
+											<input type="text" class="pagination__input" value="1" name="page">
+											<div class="pagination__label">
+												из <span>55</span>
+											</div>
+										</div>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-left-usage"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-right-usage"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="marking__item jsTabsItem">
+							<div class="marking__header">
+								<div class="marking__header-title">
+									Дилер
+								</div>
+								<div class="marking__header-action">
+									<a href="#" class="link link--dark marking__header-action" data-bs-toggle="modal" data-bs-target="#modal-dealer-import">
+										<svg class="icon">
+											<use xlink:href="img/sprites/sprite.svg#upload-usage"></use>
+										</svg>
+										<span>
+											Импортировать
+										</span>
+									</a>
+									<a href="#" class="button button--m marking__header-action" data-bs-toggle="modal" data-bs-target="#modal-dealer-add">
+										<svg class="icon button__icon">
+											<use xlink:href="img/sprites/sprite.svg#add-usage">
+										   </use>
+										</svg>
+										<span class="button__text">
+											Добавить дилера
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="marking__body">
+								<div class="marking-row marking__row marking-row marking__row--title">
+									<div class="marking-row__col marking-row__col--xs">
+										<div class="text-16 marking-row__text">
+											#
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Название
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Регион
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											ИНН
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											КПП
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Отгрузок
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--action">
+										<div class="select select--simple marking__select">
+											<select class="select__item jsSelect" name="sort" >
+												<option></option>
+												<option value="Номер">Номер</option>
+												<option value="Продукт">Продукт</option>
+												<option value="Группа">Группа</option>
+												<option value="Кол-во">Кол-во</option>
+												<option value="Дата">Дата</option>
+											</select>
+											<div class="select__label">
+												Сортировка
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="marking__body-content">
+									<div class="marking__list">
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													1
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Владивосток
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													352150228085
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													57628038
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													2	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Дербент
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													055442431388
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													46670148
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													40
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													3
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Псков
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													276332440163
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													62886226
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													47
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													4
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Кемерово
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													316111105807
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													70301708
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Улан-Удэ
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													277028267558
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													80221275
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													18
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													6
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Владивосток
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													352150228085
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													57628038
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													7
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Дербент
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													055442431388
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													46670148
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													40
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													8
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Псков
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													276332440163
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													62886226
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													47
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													9
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Улан-Удэ
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													277028267558
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													80221275
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													18
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													10
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Владивосток
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													352150228085
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													57628038
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													11
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Дербент
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													055442431388
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													46670148
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													40
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													12
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Псков
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													276332440163
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													62886226
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													47
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													13
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Кемерово
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													316111105807
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													70301708
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													14
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Улан-Удэ
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													277028267558
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													80221275
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													18
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													15
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Владивосток
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													352150228085
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													57628038
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													16
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Дербент
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													055442431388
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													46670148
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													40
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													17
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Псков
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													276332440163
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													62886226
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													47
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													18
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Кемерово
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													316111105807
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													70301708
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													19
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Улан-Удэ
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													277028267558
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													80221275
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													18
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+										<a href="#" class="marking-row marking__row" data-bs-toggle="modal" data-bs-target="#modal-dealer-item">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													20
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Кемерово
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													316111105807
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													70301708
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--action">
+												<button type="button" class="button button--m button--icon button--transparent marking__item-button" data-bs-toggle="modal" data-bs-target="#modal-dealer-edit">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#edit-usage"></use>
+													</svg>
+												</button>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						
+							<div class="marking__footer">
+								<div class="pagination pagination--md marking__pagination">
+									<div class="pagination__view">
+										<div class="text-16 text-lh pagination__view-label">
+											Показать
+										</div>
+										<div class="pagination__view-list">
+											<a href="#" class="link pagination__view-link is-active">
+												20
+											</a>
+											<a href="#" class="link pagination__view-link">
+												50
+											</a>
+											<a href="#" class="link pagination__view-link">
+												100
+											</a>
+											<a href="#" class="link pagination__view-link">
+												200
+											</a>
+										</div>
+									</div>
+									<div class="pagination__main">
+										<div class="pagination__field">
+											<div class="pagination__label">
+												Страница
+											</div>
+											<input type="text" class="pagination__input" value="1" name="page">
+											<div class="pagination__label">
+												из <span>55</span>
+											</div>
+										</div>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-left-usage"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-right-usage"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="marking__item jsTabsItem">
+							<div class="marking__header">
+								<div class="marking__header-title">
+									Продукция
+								</div>
+								<div class="marking__header-action">
+									
+									<a href="#" class="button button--m marking__header-action" data-bs-toggle="modal" data-bs-target="#modal-marking-add-products">
+										<svg class="icon button__icon">
+											<use xlink:href="img/sprites/sprite.svg#add-usage">
+										   </use>
+										</svg>
+										<span class="button__text">
+											Создать продукцию
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="marking__body">
+								<div class="marking-row marking__row marking-row marking__row--title">
+									<div class="marking-row__col marking-row__col--xs">
+										<div class="text-16 marking-row__text">
+											#
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Название
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Группа товара
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Остаток
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Отгружено
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--action">
+										<div class="select select--simple marking__select">
+											<select class="select__item jsSelect" name="sort" >
+												<option></option>
+												<option value="Номер">Номер</option>
+												<option value="Продукт">Продукт</option>
+												<option value="Группа">Группа</option>
+												<option value="Кол-во">Кол-во</option>
+												<option value="Дата">Дата</option>
+											</select>
+											<div class="select__label">
+												Сортировка
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="marking__body-content">
+									<div class="marking__list">
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													1
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													2
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													3
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													4
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													6
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													7
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													8
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													9
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													10
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													11
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													12
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													13
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													Шприцы
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													9440
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1017172
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="marking__footer">
+								<div class="pagination pagination--md marking__pagination">
+									<div class="pagination__view">
+										<div class="text-16 text-lh pagination__view-label">
+											Показать
+										</div>
+										<div class="pagination__view-list">
+											<a href="#" class="link pagination__view-link is-active">
+												20
+											</a>
+											<a href="#" class="link pagination__view-link">
+												50
+											</a>
+											<a href="#" class="link pagination__view-link">
+												100
+											</a>
+											<a href="#" class="link pagination__view-link">
+												200
+											</a>
+										</div>
+									</div>
+									<div class="pagination__main">
+										<div class="pagination__field">
+											<div class="pagination__label">
+												Страница
+											</div>
+											<input type="text" class="pagination__input" value="1" name="page">
+											<div class="pagination__label">
+												из <span>55</span>
+											</div>
+										</div>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-left-usage"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-right-usage"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="marking__item jsTabsItem">
+							<div class="marking__header">
+								<div class="marking__header-title">
+									Возврат
+								</div>
+								<div class="marking__header-action">
+									<a href="#" class="button button--m marking__header-action" data-bs-toggle="modal" data-bs-target="#modal-marking-return">
+										<svg class="icon button__icon">
+											<use xlink:href="img/sprites/sprite.svg#add-usage">
+										   </use>
+										</svg>
+										<span class="button__text">
+											Создать возврат
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="marking__body">
+								<div class="marking-row marking__row marking-row marking__row--title">
+									<div class="marking-row__col marking-row__col--xs">
+										<div class="text-16 marking-row__text">
+											#
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Продукт
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Накладная
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Дилер
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Дата возврата
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--action">
+										<div class="select select--simple marking__select">
+											<select class="select__item jsSelect" name="sort" >
+												<option></option>
+												<option value="Номер">Номер</option>
+												<option value="Продукт">Продукт</option>
+												<option value="Группа">Группа</option>
+												<option value="Кол-во">Кол-во</option>
+												<option value="Дата">Дата</option>
+											</select>
+											<div class="select__label">
+												Сортировка
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="marking__body-content">
+									<div class="marking__list">
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													1
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													2
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													3
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													4
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													5
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													6
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													7
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													8
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													9
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													10
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													11
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													12
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													13
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--xs">
+												<div class="text-16 marking-row__text">
+													14
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													122411
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													16.03.22
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="marking__footer">
+								<div class="pagination pagination--md marking__pagination">
+									<div class="pagination__view">
+										<div class="text-16 text-lh pagination__view-label">
+											Показать
+										</div>
+										<div class="pagination__view-list">
+											<a href="#" class="link pagination__view-link is-active">
+												20
+											</a>
+											<a href="#" class="link pagination__view-link">
+												50
+											</a>
+											<a href="#" class="link pagination__view-link">
+												100
+											</a>
+											<a href="#" class="link pagination__view-link">
+												200
+											</a>
+										</div>
+									</div>
+									<div class="pagination__main">
+										<div class="pagination__field">
+											<div class="pagination__label">
+												Страница
+											</div>
+											<input type="text" class="pagination__input" value="1" name="page">
+											<div class="pagination__label">
+												из <span>55</span>
+											</div>
+										</div>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-left-usage"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-right-usage"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="marking__item jsTabsItem">
+							<div class="marking__header">
+								<div class="marking__header-title">
+									Статистика
+								</div>
+							</div>
+							<div class="marking__body">
+								<div class="marking-row marking__row marking-row marking__row--title">
+									<div class="marking-row__col marking-row__col--sm">
+										<div class="text-16 marking-row__text">
+											Дата
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Продукт
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Маркировано кодов
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Отгружено кодов
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Отгружено накладных
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--action">
+										<div class="select select--simple marking__select">
+											<select class="select__item jsSelect" name="sort" >
+												<option></option>
+												<option value="Номер">Номер</option>
+												<option value="Продукт">Продукт</option>
+												<option value="Группа">Группа</option>
+												<option value="Кол-во">Кол-во</option>
+												<option value="Дата">Дата</option>
+											</select>
+											<div class="select__label">
+												Сортировка
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="marking__body-content">
+									<div class="marking__list">
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													18.07.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													38 873
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1 173
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													493
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													28.03.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													68 822
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 792	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													816
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													08.06.2020
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25 932
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													6 894
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													668
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													01.02.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													67 567
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5 104
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													288
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													25.01.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													56 617
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 619
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													234
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													18.07.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													38 873
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1 173
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													493
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													28.03.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													68 822
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 792	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													816
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													08.06.2020
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25 932
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													6 894
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													668
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													01.02.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													67 567
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5 104
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													288
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													25.01.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													56 617
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 619
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													234
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													18.07.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													38 873
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1 173
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													493
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													28.03.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													68 822
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 792	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													816
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													08.06.2020
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25 932
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													6 894
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													668
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													01.02.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													67 567
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5 104
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													288
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													25.01.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													56 617
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 619
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													234
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													18.07.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													38 873
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													1 173
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													493
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													28.03.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													68 822
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 792	
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													816
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													08.06.2020
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													25 932
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													6 894
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													668
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													01.02.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													67 567
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													5 104
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													288
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													25.01.2021
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													56 617
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													8 619
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													234
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+											
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="marking__footer">
+								<div class="pagination pagination--md marking__pagination">
+									<div class="pagination__view">
+										<div class="text-16 text-lh pagination__view-label">
+											Показать
+										</div>
+										<div class="pagination__view-list">
+											<a href="#" class="link pagination__view-link is-active">
+												20
+											</a>
+											<a href="#" class="link pagination__view-link">
+												50
+											</a>
+											<a href="#" class="link pagination__view-link">
+												100
+											</a>
+											<a href="#" class="link pagination__view-link">
+												200
+											</a>
+										</div>
+									</div>
+									<div class="pagination__main">
+										<div class="pagination__field">
+											<div class="pagination__label">
+												Страница
+											</div>
+											<input type="text" class="pagination__input" value="1" name="page">
+											<div class="pagination__label">
+												из <span>55</span>
+											</div>
+										</div>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-left-usage"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-right-usage"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="marking__item jsTabsItem">
+							<div class="marking__header">
+								<div class="marking__header-title">
+									Поиск по промокоду
+								</div>
+								<div class="marking__search-block jsForm">
+									<form action="#">
+										<div class="marking__search-form">
+											<div class="marking__search-item">
+												<div class="text text-medium marking__search-label">
+													Промокод
+												</div>
+												<div class="input input--m input--search marking__input-search">
+													<input type="text" class="input__field jsInput" placeholder="Промокод" name="promocode" value="147639582539745">
+													<button class="input__button">
+														<svg class="icon">
+															<use xlink:href="img/sprites/sprite.svg#search-usage"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="marking__search-item">
+												<div class="text text-medium marking__search-label">
+													Диапазон
+												</div>
+												<div class="marking__search-range">
+													<div class="marking__search-input">
+														<span>
+															от
+														</span>
+		
+														<div class="input input--m">
+															<input type="text" class="input__field jsInput" name="min" value="5 000">	
+														</div>
+													</div>
+													<div class="marking__search-input">
+														<span>
+															до
+														</span>
+		
+														<div class="input input--m">
+															<input type="text" class="input__field jsInput" name="max" value="80 000">	
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="marking__body">
+								<div class="marking-row marking__row marking-row marking__row--title">
+									<div class="marking-row__col marking-row__col--lg">
+										<div class="text-16 marking-row__text">
+											Продукт
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--sm">
+										<div class="text-16 marking-row__text">
+											Код
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--sm">
+										<div class="text-16 marking-row__text">
+											Накладня
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--xl">
+										<div class="text-16 marking-row__text">
+											Диллер
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--md">
+										<div class="text-16 marking-row__text">
+											Дата отгрузки
+										</div>
+									</div>
+									<div class="marking-row__col marking-row__col--action">
+										<div class="select select--simple marking__select">
+											<select class="select__item jsSelect" name="sort" >
+												<option></option>
+												<option value="Номер">Номер</option>
+												<option value="Продукт">Продукт</option>
+												<option value="Группа">Группа</option>
+												<option value="Кол-во">Кол-во</option>
+												<option value="Дата">Дата</option>
+											</select>
+											<div class="select__label">
+												Сортировка
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="marking__body-content">
+									<div class="marking__list">
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													38 873
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна <span> (Владивосток)</span>
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна <span> (Москва)</span>
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна <span> (Калининград)</span>
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="marking-row marking__row">
+											<div class="marking-row__col marking-row__col--lg">
+												<div class="text-16 marking-row__text">
+													Токуяма Астерия
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													4 725
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--sm">
+												<div class="text-16 marking-row__text">
+													697147
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--xl">
+												<div class="text-16 marking-row__text">
+													ИП Мансурова Саида Омаровна
+												</div>
+											</div>
+											<div class="marking-row__col marking-row__col--md">
+												<div class="text-16 marking-row__text">
+													29.06.2021
+												</div>
+											</div>
+										
+											<div class="marking-row__col marking-row__col--action">
+												<a href="#" class="button button--m button--icon button--transparent marking__item-button">
+													<svg class="icon button__icon">
+														<use xlink:href="img/sprites/sprite.svg#trash-usage"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="marking__footer">
+								<div class="pagination pagination--md marking__pagination">
+									<div class="pagination__view">
+										<div class="text-16 text-lh pagination__view-label">
+											Показать
+										</div>
+										<div class="pagination__view-list">
+											<a href="#" class="link pagination__view-link is-active">
+												20
+											</a>
+											<a href="#" class="link pagination__view-link">
+												50
+											</a>
+											<a href="#" class="link pagination__view-link">
+												100
+											</a>
+											<a href="#" class="link pagination__view-link">
+												200
+											</a>
+										</div>
+									</div>
+									<div class="pagination__main">
+										<div class="pagination__field">
+											<div class="pagination__label">
+												Страница
+											</div>
+											<input type="text" class="pagination__input" value="1" name="page">
+											<div class="pagination__label">
+												из <span>55</span>
+											</div>
+										</div>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-left-usage"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__button">
+											<svg class="icon">
+												<use xlink:href="img/sprites/sprite.svg#arrow-right-usage"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+		</main>
+
+		
+		<!-- modal -->
+		@@include("../blocks/modules/modal/modal.html")
+		<!-- modal  ends -->
+
+
+		<script src="js/main.js"></script>
+		<script src="js/vendor.js"></script>
+	</body>
+</html>

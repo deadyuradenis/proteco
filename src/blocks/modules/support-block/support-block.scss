@@ -1,0 +1,91 @@
+.support-block {
+
+    &__item {
+        padding: 64px;
+        background-color: #fff;
+        margin-bottom: 24px;
+
+        @media only screen and (max-width: $bp-md){
+            margin-bottom: 16px;
+            padding: 24px;
+        }   
+        
+        @media only screen and (max-width: $bp-sm){
+            padding: 16px;
+            margin-right: -16px;
+            margin-left: -16px;
+            margin-bottom: 4px;
+        }
+ 
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    p{
+        margin-bottom: 16px;
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__question {
+        margin-bottom: 16px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__row {
+        margin-right: -32px;
+        margin-left: -32px;
+        margin-bottom: -40px;
+    }
+
+    &__col {
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 40px;
+    }
+
+    &__form-item{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+
+        @media only screen and (max-width: $bp-md){
+            margin-bottom: 24px;
+        }   
+        
+        @media only screen and (max-width: $bp-sm){
+            
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__form-file{
+        margin-right: 24px;
+        max-width: 50%;
+
+        @media only screen and (max-width: $bp-md){
+            margin: 0 auto 32px;
+            max-width: 100%;
+        }   
+    }
+
+    &__form-button{
+        @media only screen and (max-width: $bp-md){
+            width: 100%;
+        }   
+    }
+}

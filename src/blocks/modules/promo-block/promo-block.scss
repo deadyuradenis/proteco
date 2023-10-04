@@ -1,0 +1,95 @@
+.promo-block {
+    margin-bottom: 40px;
+
+    &__row {
+        margin-right: -12px;
+        margin-left: -12px;
+        margin-bottom: -24px;
+    }
+
+    &__col {
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__item {
+        padding: 32px;
+        background-color: #fff;
+
+        @media only screen and (max-width: $bp-sm){
+            padding: 24px;
+        }
+    }
+
+    &__item-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 26px;
+    }
+
+    &__item-body {
+        display: flex;
+
+        @media only screen and (max-width: $bp-xl){
+            flex-direction: column;
+        }
+    }
+
+    &__field {
+        margin-right: 16px;
+        flex: 1 1 100%;
+
+        @media only screen and (max-width: $bp-xl){
+            margin-bottom: 16px;
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+
+    &__points{
+        display: flex;
+        align-items: center;
+        height: 56px;
+        padding: 0 20px;
+        background-color: #F8F8F8;
+        white-space: nowrap;
+
+        @media only screen and (max-width: $bp-sm){
+            justify-content: space-between;
+            padding: 0 16px;
+
+            span{
+                text-align: right;
+                margin-left: 10px;
+            }
+        }
+
+        span{
+            font-size: 16px;
+            line-height: 125%;
+            margin-left: 20px;
+            color: $gray-dark;
+        }
+    }
+
+    &__points-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 130%;
+        
+        @media only screen and (max-width: $bp-sm){
+            font-size: 19px;
+
+        }
+    }
+
+    &__button{
+        white-space: nowrap;
+
+        @media only screen and (max-width: $bp-xl){
+            width: 100%;
+        }
+    }
+}

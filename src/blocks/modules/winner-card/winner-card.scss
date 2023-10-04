@@ -1,0 +1,107 @@
+.winner-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-xl){
+        align-items: start;
+        padding: 24px;
+    }
+    
+    @media only screen and (max-width: $bp-md){
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 16px;
+    }
+    
+    &__left {
+        width: 152px;
+        height: 152px;
+        aspect-ratio: 1;
+        position: relative;
+        flex: 0 0 auto;
+        margin-right: 32px;
+
+        @media only screen and (max-width: $bp-xl){
+            width: 112px;
+            height: 112px;
+        }
+
+        @media only screen and (max-width: $bp-md){
+            width: 96px;
+            height: 96px;
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+        height: 40px;
+        flex: 0 0 auto;   
+        border: 3px solid #fff;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $text;
+        background: radial-gradient(55% 55% at 73.75% 20%, #FFF2D0 0%, #FDCE55 100%);
+
+        &--second{
+            background: radial-gradient(55% 55% at 73.75% 20%, #E8E8E8 0%, #BCBCBC 100%);
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        
+        @media only screen and (max-width: $bp-md){
+            text-align: center;
+        }
+    }
+
+    &__mail {
+        font-size: 16px;
+        line-height: 26px;
+        color: #828282;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-family: 'Montserrat';
+        font-size: 19px;
+        line-height: 25px;
+        margin-bottom: 12px;
+    }
+
+    &__prize {
+        font-size: 16px;
+        line-height: 26px;
+        color: #4F4F4F;
+        
+        @media only screen and (max-width: $bp-md){
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

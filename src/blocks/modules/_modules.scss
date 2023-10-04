@@ -1,0 +1,45 @@
+// //элементы
+@import "button/button";
+@import "icon/icon";
+@import "checkbox/checkbox";
+@import "input/input";
+@import "radio/radio";
+@import "input-file/input-file";
+@import "select/select";
+@import "tooltip/tooltip";
+@import "link/link";
+
+// блоки
+@import "header/header";
+@import "header-personal/header-personal";
+@import "user-menu/user-menu";
+@import "notifications-menu/notifications-menu";
+@import "footer/footer";
+
+@import "winner-card/winner-card";
+@import "question-block/question-block";
+
+@import "list/list";
+@import "pagination/pagination";
+@import "tabs/tabs";
+
+@import "slider/slider";
+
+@import "alert-block/alert-block";
+@import "promo-block/promo-block";
+@import "prizes-list/prizes-list";
+@import "shares-list/shares-list";
+
+@import "account-block/account-block";
+@import "support-block/support-block";
+
+
+
+//секции
+@import "section/_modules";
+
+@import "modal/modal";
+
+@import "registration/registration";
+@import "marking/marking";
+@import "sidebar/sidebar";

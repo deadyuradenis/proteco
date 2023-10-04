@@ -1,0 +1,133 @@
+.sidebar {
+    background-color: #fff;
+    position: relative;
+
+    &__inner {
+        position:sticky;
+        top: 0;
+        padding: 48px 0 0;
+        display: flex;
+        max-height: 100vh;
+        flex-direction: column;
+
+        @media only screen and (max-width: $bp-xl){
+            padding-top: 32px;
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $dark;
+        padding-bottom: 48px;
+        margin: 0 32px;
+        border-bottom: 1px solid #F2F2F2;
+
+        @media only screen and (max-width: $bp-xl){
+            padding-bottom: 32px;
+        }
+    }
+
+    &__user-photo {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        margin-right: 24px;
+    }
+
+    &__main{
+        padding: 48px 32px;
+        overflow-y: auto;
+        scrollbar-color: #E0E0E0 transparent;
+        scrollbar-width: thin;
+
+        @media only screen and (max-width: $bp-xl){
+            padding: 32px 32px;
+        }
+        
+        &::-webkit-scrollbar {
+            height: 4px;
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #E0E0E0;
+        }
+    }
+
+    &__menu {
+        flex: 1 1 auto;
+
+    }
+
+    &__menu-group {
+        margin-bottom: 40px;
+        
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__menu-title {
+        color: $gray-dark;
+        padding: 0 16px;
+        margin-bottom: 16px;
+
+        @media only screen and (max-width: $bp-xxl){
+            padding: 0;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &__menu-item {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: $dark;
+        padding: 12px 16px;
+        transition:background-color 0.25s ease, color 0.25s ease;
+
+        &:hover{
+            background-color: #F8F8F8;
+        }
+
+        &::after{
+            content: "";
+            background-color: $blue;
+            height: 100%;
+            width: 4px;
+            position: absolute;
+            right: -32px;
+            top: 0;
+            bottom: 0;
+            border-radius: 2px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+
+        &.is-active{
+            color: $blue;
+
+            &::after{
+                transform: scaleX(100%);
+            }
+        }
+    }
+
+    &__menu-search {
+        margin-top: 48px;
+
+        @media only screen and (max-width: $bp-xl){
+            margin-top: 32px;
+        }
+    }
+}

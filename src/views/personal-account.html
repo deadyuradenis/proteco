@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>index</title>
+		<meta name="theme-color" content="#fff">
+		<link rel="icon" type="image/x-icon" href="img/svg/favicon.svg">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+
+	</head>
+	<body class="body">
+		<!-- header -->
+		@@include("../blocks/modules/header-personal/header-personal.html")
+		<!-- header  ends -->
+
+		<main class="main">
+			<div class="content">
+				<section class="section section--personal">
+					<div class="container">
+						<div class="section__inner">
+							<div class="section__title">
+								Профиль
+							</div>
+						</div>
+						<div class="account-block">
+							<div class="account-block__left">
+								<div class="account-block__left-inner">
+									<div class="account-block__left-img">
+										<img src="img/user/account-photo.png" alt="">
+									</div>
+									<div class="account-block__left-actions">
+										<a href="#" class="account-block__left-action">
+											Удалить
+										</a>
+										<label class="account-block__left-action">
+											<input type="file" class="d-none" accept=".jpg,.jpeg,.png,.webp,.svg">
+											<span>
+												Изменить
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="account-block__right">
+								<div class="account-block__block jsForm jsChangeInfBlock">
+									<form action="#">
+										<div class="account-block__block-header">
+											<div class="h4 account-block__block-title">
+												Личные данные
+											</div>
+											<div class="account-block__block-change jsChangeInfTrigger">
+												Изменить
+											</div>
+										</div>
+										<div class="account-block__block-content">
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="name-1" value="Константинов">	
+												<span class="input__label">
+													Фамилия
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="name-2">	
+												<span class="input__label">
+													Имя
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="name-3">	
+												<span class="input__label">
+													Отчество
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="mail">	
+												<span class="input__label">
+													Эл.почта
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput jsPhoneMask jsInputReq" name="phone" value="+79876543210">	
+												<span class="input__label">
+													Введите номер
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+										</div>
+										<div class="account-block__block-footer jsChangeButtons">
+											<button type="button" class="button button--m button--contour account-block__button jsChangeInfCancel">
+												<span class="button__text">
+													Отменить
+												</span>
+											</button>
+											<button type="button" class="button button--m account-block__button jsFormSubmitButton jsChangeInfSubmit">
+												<span class="button__text">
+													Сохранить
+												</span>
+											</button>
+										</div>
+									</form>
+
+								</div>
+								
+								<div class="account-block__block jsForm jsChangeInfBlock">
+									<form action="#">
+										<div class="account-block__block-header">
+											<div class="h4 account-block__block-title">
+												Информация о клинике
+											</div>
+											<div class="account-block__block-change jsChangeInfTrigger">
+												Изменить
+											</div>
+										</div>
+										<div class="account-block__block-content">
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="name-1">	
+												<span class="input__label">
+													Занимаемая должность
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="name-2">	
+												<span class="input__label">
+													Название клиники
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="name-3">	
+												<span class="input__label">
+													Адрес клиники
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput jsPhoneMask" name="mail">	
+												<span class="input__label">
+													Телефон клинки
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+											<div class="input input--l account-block__input jsChangeInput" disabled>
+												<input type="text" class="input__field jsInput" name="phone">	
+												<span class="input__label">
+													Регион
+												</span>
+												<span class="input__error">
+													Ошибка
+												</span>
+											</div>
+										</div>
+										<div class="account-block__block-footer jsChangeButtons">
+											<button type="button" class="button button--m button--contour account-block__button jsChangeInfCancel">
+												<span class="button__text">
+													Отменить
+												</span>
+											</button>
+											<button type="button" class="button button--m account-block__button jsChangeInfSubmit">
+												<span class="button__text">
+													Сохранить
+												</span>
+											</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		
+		<!-- modal -->
+		@@include("../blocks/modules/modal/modal.html")
+		<!-- modal  ends -->
+
+
+		<script src="js/main.js"></script>
+		<script src="js/vendor.js"></script>
+	</body>
+</html>

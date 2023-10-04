@@ -1,0 +1,122 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        flex: 0 0 auto;
+        border: 2px solid $blue-dark;
+        fill: $blue-dark;
+        border-radius: 50%;
+        transition: fill 0.25s ease, background-color 0.25s ease;
+
+        .icon{
+            width: 24px;
+            height: 24px;
+            flex: 0 0 auto;
+        }
+ 
+        &:hover{
+            fill: #fff;
+            background-color: $blue-dark;
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__button + &__field{
+        margin-left: 24px;
+    }
+
+    &__field{
+        display: flex;
+        align-items: center;
+        margin: 0 24px 0 0;
+    }
+
+    &__input {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #E0E0E0;
+        border-radius: 2px;
+        font-size: inherit;
+        line-height: inherit;
+        margin: 0 8px;
+    }
+
+    &__label {
+        padding: 0 8px;
+    }
+
+    
+    &__view {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+
+    &__view-label {
+        margin-right: 20px;
+    }
+
+    &__view-list {
+        display: flex;
+    }
+
+    &__view-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $dark;
+        padding: 0 8px;
+        min-width: 48px;
+        height: 36px;
+        margin-right: 2px;
+        background-color: #fff;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+
+        &.is-active{
+            color: $blue;
+        }
+    }
+
+    
+    &--md &__button{
+        height: 40px;
+        width: 40px;
+    }
+
+    &--md &__input{
+        height: 40px;
+        width: 40px;
+    }
+
+    &--md{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__button + &__button{
+        margin-left: 16px;
+    }
+
+}

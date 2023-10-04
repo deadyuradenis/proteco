@@ -1,0 +1,58 @@
+@keyframes fadeIn {
+	0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+//animation: fadeIn ease 0.3s forwards;
+
+
+
+@keyframes tabs-hover{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// animation: tabs-hover ease 0.3s forwards;
+
+@keyframes marking-hover{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes marking-close{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+
+// animation: marking-hover ease 0.5s forwards;

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>index</title>
+		<meta name="theme-color" content="#fff">
+		<link rel="icon" type="image/x-icon" href="img/svg/favicon.svg">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+
+	</head>
+	<body class="body">
+
+		<main class="main">
+			<div class="content">
+				<section class="registration">
+					<div class="registration__header">
+						<div class="container">
+							<div class="registration__header-inner">
+								<a href="index.html" class="registration__header-link">
+									<svg class="icon">
+										<use xlink:href="img/sprites/sprite.svg#arrow-round--long-usage"></use>
+									</svg>
+									<span>
+										Вернуться на сайт
+									</span>
+								</a>
+								<div class="registration__header-login">
+									<div class="text d-none d-md-flex registration__header-text">
+										Уже есть аккаунт?
+									</div>
+									<a href="#" class="button button--contour registration__header-button" data-bs-toggle="modal" data-bs-target="#modal-login">
+										<span class="button__text">
+											Вход
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="registration__main jsForm">
+						<form action="#">
+							<div class="registration__main-inner">
+								<div class="registration__left">
+									<picture class="registration__logo">
+										<source srcset="img/logo-inverted.svg" media="(max-width: 1439px)">
+										<img src="img/logo-large.svg" alt="logo">
+									</picture>
+								</div>
+								<div class="registration__right">
+									<div class="registration__right-content">
+										<div class="h2 registration__title">
+											Регистрация
+										</div>
+										<div class="input registration__input">
+											<input type="text" class="input__field jsInput jsInputReq" name="email">
+											<span class="input__label">
+												Введите email
+											</span>
+											<span class="input__error">
+												Ошибка
+											</span>
+										</div>
+										<div class="input registration__input">
+											<input type="text" class="input__field jsInput jsPhoneMaskAuto jsInputReq" name="phone">
+											<span class="input__label">
+												Телефон
+											</span>
+											<span class="input__error">
+												Ошибка
+											</span>
+										</div>
+										<div class="input input--icon-right registration__input">
+											<input type="password" class="input__field jsInput jsInputReq jsInputPassword" name="password">
+											<div class="input__icon input__icon--gray is-show jsInputType">
+												<svg class="icon icon--show">
+													<use xlink:href="img/sprites/sprite.svg#show-usage"></use>
+												</svg>
+												<svg class="icon icon--hide">
+													<use xlink:href="img/sprites/sprite.svg#hide-usage"></use>
+												</svg>
+											</div>
+											<span class="input__label">
+												Придумайте пароль
+											</span>
+											<span class="input__error">
+												Пароли не совпадают
+											</span>
+										</div>
+										<div class="input input--icon-right registration__input">
+											<input type="password" class="input__field jsInput jsInputReq jsInputPassword" name="password-repeat">
+											<div class="input__icon input__icon--gray is-show jsInputType">
+												<svg class="icon icon--show">
+													<use xlink:href="img/sprites/sprite.svg#show-usage"></use>
+												</svg>
+												<svg class="icon icon--hide">
+													<use xlink:href="img/sprites/sprite.svg#hide-usage"></use>
+												</svg>
+											</div>
+											<span class="input__label">
+												Повторите пароль
+											</span>
+											<span class="input__error">
+												Пароли не совпадают
+											</span>
+										</div>
+										<button class="button registration__button">
+											<span class="button__text">
+												Зарегистрироваться
+											</span>
+										</button>
+										<label class="checkbox registration__checkbox">
+											<input type="checkbox" checked class="checkbox__input jsCheckbox jsInputReq" name="checkbox">
+											<div class="checkbox__wrapper">
+												<div class="checkbox__icon">
+													<svg class="icon">
+														<use xlink:href="img/sprites/sprite.svg#ok-usage"></use>
+													</svg>
+												</div>
+												<div class="checkbox__title">
+													Принимаю условия <a href="#">пользовательского соглашения</a> и даю согласие на обработку <a href="#">персональной информации</a>
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="registration__footer">
+						<div class="container">
+							<div class="registration__footer-inner">
+								<a href="#" class="registration__footer-action">
+									<svg class="icon">
+										<use xlink:href="img/sprites/sprite.svg#repost-usage"></use>
+									</svg>
+									<span>
+										Поделиться ссылкой на регистрацию
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</main>
+
+		
+		<!-- modal -->
+		@@include("../blocks/modules/modal/modal.html")
+		<!-- modal  ends -->
+
+
+		<script src="js/main.js"></script>
+		<script src="js/vendor.js"></script>
+	</body>
+</html>

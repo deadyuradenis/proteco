@@ -1,0 +1,186 @@
+.section-list {
+    padding-top: 0;
+
+    @media only screen and (max-width: $bp-md){
+        padding-top: 0;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        width: 100%;
+        
+        @media only screen and (max-width: $bp-lg){
+            text-align: center;
+        }
+    }
+    
+    &__header-actions{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-lg){
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &__tabs-nav {
+        display: flex;
+
+        @media only screen and (max-width: $bp-lg){
+            width: 100%;
+        }
+    }
+
+    &__tabs-link {
+
+        @media only screen and (max-width: $bp-lg){
+            width: 50%;
+            margin-right: 0;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__input-search {
+        width: 392px;
+        
+        .input{
+
+            &__field{
+                border: none;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            &__button{
+                border: 2px solid $blue;
+            }
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            margin-bottom: 24px;
+            order: -1;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            width: 100%;
+        }
+    }
+
+    &__list {
+        border-radius: 2px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        
+        @media only screen and (max-width: $bp-md){
+            padding: 16px;
+        }
+    }
+
+    &__row {
+        padding: 16px;
+        display: flex;
+
+        &:nth-child(even){
+            background-color: #FAFAFA;
+        }
+
+        &--title{
+            padding: 0 16px;
+            margin-bottom: 16px;
+            color: #828282;
+
+            @media only screen and (max-width: $bp-md){
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: $bp-md){
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+        flex: 0 0 205px;
+        margin-right: 24px;
+
+        @media only screen and (max-width: $bp-xl){
+            flex-basis: 198px;
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            flex-basis: 138px;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            margin-bottom: 8px;
+            margin-right: 0;
+            flex: 0 0 auto;
+        
+            .text{
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        &:last-of-type{
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+        &--date {
+
+            @media only screen and (max-width: $bp-md){
+                color: #868686;
+            }
+            
+        }
+
+        &--email {
+
+            @media only screen and (max-width: $bp-md){
+                
+                .text{
+                    font-family: 'Montserrat';
+                    font-weight: 600;
+                    font-size: 19px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        &--prize {
+            flex: 1 1 100%;
+        }
+    }
+
+    &__video {
+        aspect-ratio: 1.785;
+        width: 100%;
+    }
+
+    &__pagination {
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,74 @@
+.tooltip {
+    position: relative;
+
+    &:hover &__content{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(-18px);
+    }
+
+    &:hover &__trigger{
+        fill: $blue-active;
+    }
+
+    &__trigger {
+        cursor: pointer;
+        fill: $blue;
+        transition: fill 0.25s ease;
+
+        .icon{
+            width: 24px;
+            height: 24px;
+        }
+
+        span{
+            margin-left: 12px;
+        }
+
+        &:hover{
+            fill: $blue-active;
+        }
+    }
+
+    &__content {
+        width: 330px;
+        position: absolute;
+        bottom: 100%;
+        transform: translateY(-12px);
+        right: 10px;
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 2px 2px 0px 2px;
+        box-shadow: 0px 33px 80px rgba(2, 12, 30, 0.07), 0px 22px 63px rgba(2, 12, 30, 0.033);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.45s ease, opacity 0.45s ease, transform 0.45s ease;
+
+        &::before{
+            content: "";
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='7' viewBox='0 0 16 7' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill='%23fff' d='M16 2.23607C16 0.749304 14.4354 -0.217688 13.1056 0.447213L-6.99382e-07 7L16 7L16 2.23607Z'/%3e%3c/svg%3e ");
+            width: 16px;
+            height: 7px;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            transform: scale(1,-1);
+        }
+
+        @media only screen and (max-width: $bp-md){
+            width: 250px;
+        }   
+        
+    }
+
+    &--left &__content{
+        right: auto;
+        left: 0;
+
+        &::before{
+            right: auto;
+            left: 0;
+            transform:scale(-1,-1);
+        }
+    }
+}

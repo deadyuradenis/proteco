@@ -1,0 +1,140 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5   {
+	font-weight: 600;
+	font-family: 'Montserrat';
+	line-height: 130%;
+}
+h1,.h1{
+	font-size: 48px;
+
+	@media only screen and (max-width: $bp-xl){
+    
+	}
+	
+	@media only screen and (max-width: $bp-lg){
+		font-size: 40px;
+	}
+	
+	@media only screen and (max-width: $bp-md){
+		font-size: 33px;
+	}
+	
+	@media only screen and (max-width: $bp-sm){
+		font-size: 28px;
+	}
+}
+h2, .h2 {
+	font-size: 33px;
+
+	@media only screen and (max-width: $bp-md){
+		font-size: 28px;
+	}
+	
+	@media only screen and (max-width: $bp-sm){
+		font-size: 23px;
+	}
+}
+
+
+h3, .h3 {
+	font-size: 24px;
+}
+
+h4, .h4 {
+	font-size: 19px;
+}
+
+h5, .h5{
+	font-size: 16px;
+}
+
+h6, .h6 {
+	font-size: 14px;
+
+	@media only screen and (max-width: $bp-xl){
+		font-size: 20px;
+	}
+	
+	@media only screen and (max-width: $bp-sm){
+		font-size: 18px;
+	}
+}
+
+
+
+.text {
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+
+	@media only screen and (max-width: $bp-sm){
+		font-size: 16px;
+		line-height: 160%;
+	}
+	&-xs{
+		font-size: 12px;
+		line-height: 160%;
+	}
+
+	&-sm{
+		font-size: 14px;
+		line-height: 160%;
+	}
+
+	&-md {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+
+		@media only screen and (max-width: $bp-lg) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	
+	&-18{
+		font-size: 18px;
+		line-height: 160%;
+	}
+
+	&-16{
+		font-size: 16px;
+		line-height: 160%;
+	}
+
+	&-xl {
+		font-size: 20px;
+		line-height: 160%;
+	}
+
+	&-lh{
+		line-height: 125%;
+	}
+
+	&-regular {
+		font-weight: 400;
+	}
+	
+	&-medium{
+		font-weight: 500;
+	}
+
+	&-semibold {
+		font-weight: 600;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+	
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

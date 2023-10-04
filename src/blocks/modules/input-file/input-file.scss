@@ -1,0 +1,68 @@
+.input-file {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: $dark;
+    fill: $blue;
+    height: 64px;
+    transition: fill 0.25s ease, color 0.25s ease;
+    
+    &--l{
+        height: 56px;
+    }
+
+    &--simple{
+        height: auto;
+    }
+
+    &--simple &__wrapper{
+        border: none;
+        padding: 0;
+        
+    }
+
+    &.is-error &__wrapper{
+        border-color: red;
+    }
+    
+    &:hover{
+        fill: $blue-hover;
+        color: $blue-hover;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__wrapper {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0 16px;
+        border: 1px solid #E0E0E0;
+        border-radius: 2px;
+        transition: border-color 0.25s ease;
+
+        &:hover{
+            border-color: #828282;
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,74 @@
+.slider {
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        margin: 0;
+        position: relative;
+        cursor: pointer;
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid $blue-dark;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: $blue-dark;
+        transition: fill 0.3s ease, opacity 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+
+        &::after{
+            content: none !important;
+        }
+
+        .icon{
+            width: 50%;
+            height: 50%;
+        }
+
+        &:hover{
+            fill: #fff;
+            background-color: $blue-dark;
+        }
+
+        &.swiper-button-disabled{
+            pointer-events: auto;
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        &--inverted{
+            border-color: #fff;
+            fill: #fff;
+
+            &:hover{
+                background-color: #fff;
+                fill: $blue;
+            }
+        }
+    }
+
+    &__button-icon{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 60px;
+        height: 100%;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+    }
+
+}
